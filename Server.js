@@ -22,10 +22,10 @@ let socket = require('socket.io')(server,{
 socket.sockets.on('connection', function(client){
     console.log('Connection!');
 
-    client.on('serverReceiver', ({name, message, emotion, font}) => {
+    client.on('serverReceiver', ({name, message, font}) => {
         console.log("message recieved")
         console.log(message)
-        socket.sockets.emit('clientReceiver', ({name, message, emotion, font}))
+        socket.sockets.emit('clientReceiver', ({name, message, font}))
     })
 })
 
