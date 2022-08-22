@@ -11,7 +11,6 @@
 실행방법
 
 ~~~
-npm install package.json
-npm start
+node Server.js
 ~~~
 
